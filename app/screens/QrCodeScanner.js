@@ -6,8 +6,7 @@ import DeliveryApi from '../apis/delivery'; // Import the DeliveryApi module
 import AppButton from '../components/AppButton';
 
 const QRCodeScanner = ({ navigation, route }) => {
-    // const { deliveryId } = route.params || "67503358471007d9f0829883"; // Retrieve deliveryId passed from navigation
-    const deliveryId = "67503358471007d9f0829883"; // Retrieve deliveryId passed from navigation
+    const { deliveryId } = route.params;
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
     const [isScannerActive, setIsScannerActive] = useState(true);

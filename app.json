@@ -1,7 +1,7 @@
 {
   "expo": {
+    "slug": "PurePlatinum",
     "name": "Transpectra",
-    "slug": "Transpectra",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.jpg",

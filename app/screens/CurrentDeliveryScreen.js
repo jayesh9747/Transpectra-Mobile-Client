@@ -49,7 +49,7 @@ const CurrentDeliveryScreen = ({ navigation }) => {
     }
 
     // Destructure delivery data
-    const { pickupLocation, dropoffLocation, deliveryRoutes, products, uniqueOrderId } = deliveryData;
+    const { pickupLocation, dropoffLocation, deliveryRoutes, products, uniqueOrderId, _id } = deliveryData;
 
     // Prepare data for pickup/dropoff table
     const pickupDropoffData = [
@@ -87,7 +87,7 @@ const CurrentDeliveryScreen = ({ navigation }) => {
                             title="Scan QR Code"
                             style={styles.Button}
                             color="blue"
-                            onPress={() => navigation.navigate("QRCode")}
+                            onPress={() => navigation.navigate("QRCode", { deliveryId: _id })}
                         />
                     </View>
 
@@ -127,10 +127,10 @@ const styles = StyleSheet.create({
     },
     noDataContainer: {
         flex: 1,
-        alignItems: 'center', 
-        justifyContent: 'center', 
+        alignItems: 'center',
+        justifyContent: 'center',
         padding: 20,
-        backgroundColor: '#fff', 
+        backgroundColor: '#fff',
     },
     noDataText: {
         fontSize: 16,

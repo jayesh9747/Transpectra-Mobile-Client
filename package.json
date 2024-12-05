@@ -41,7 +41,8 @@
     "react-native-screens": "^3.32.0",
     "react-native-toast-message": "^2.2.0",
     "yup": "^1.4.0",
-    "zustand": "^4.5.5"
+    "zustand": "^4.5.5",
+    "expo-dev-client": "~4.0.29"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
